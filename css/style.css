@@ -1,0 +1,886 @@
+/* ===================================================
+   RESET
+=================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff8fb;
+    color:#444;
+    overflow-x:hidden;
+}
+
+/* ===================================================
+   BACKGROUND
+=================================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        #fff8fb,
+        #ffeef5,
+        #ffffff,
+        #fff2f8
+    );
+
+    background-size:300% 300%;
+
+    animation:bgMove 18s ease infinite;
+
+    z-index:-10;
+
+}
+
+@keyframes bgMove{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+/* ===================================================
+   HEARTS
+=================================================== */
+
+.hearts{
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:-1;
+
+}
+
+.heart{
+
+position:absolute;
+
+bottom:-40px;
+
+opacity:.8;
+
+animation:heartFloat linear forwards;
+
+}
+
+@keyframes heartFloat{
+
+0%{
+
+transform:translateY(0);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh);
+
+opacity:0;
+
+}
+
+}
+
+/* ===================================================
+   INTRO
+=================================================== */
+
+#intro{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+.intro-content{
+
+max-width:900px;
+
+animation:fadeUp 1.2s ease;
+
+}
+
+.small-text{
+
+font-size:28px;
+
+color:#e57ca8;
+
+margin-bottom:20px;
+
+font-family:'Dancing Script',cursive;
+
+}
+
+.intro-content h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:90px;
+
+line-height:1.1;
+
+color:#d35c91;
+
+}
+
+.intro-content span{
+
+display:block;
+
+margin-top:12px;
+
+}
+
+.subtitle{
+
+margin-top:35px;
+
+font-size:22px;
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+.scroll-text{
+
+margin-top:70px;
+
+font-size:17px;
+
+color:#d35c91;
+
+animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+50%{
+
+transform:translateY(10px);
+
+}
+
+}
+
+/* ===================================================
+   SLIDESHOW
+=================================================== */
+
+#slideshow{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+}
+
+.slideshow-box{
+
+text-align:center;
+
+}
+
+#slideImage{
+
+width:520px;
+
+max-width:92vw;
+
+border-radius:30px;
+
+box-shadow:0 25px 70px rgba(0,0,0,.15);
+
+transition:1s;
+
+}
+
+#slideCaption{
+
+margin-top:30px;
+
+font-size:42px;
+
+font-family:'Playfair Display',serif;
+
+color:#d35c91;
+
+transition:1s;
+
+}
+
+/* ===================================================
+   STORY TITLE
+=================================================== */
+
+.story-title{
+
+padding:140px 20px;
+
+text-align:center;
+
+}
+
+.story-title h2{
+
+font-family:'Playfair Display';
+
+font-size:68px;
+
+color:#d35c91;
+
+margin-bottom:20px;
+
+}
+
+.story-title p{
+
+font-size:22px;
+
+color:#777;
+
+}
+
+/* ===================================================
+   MEMORY
+=================================================== */
+
+.memory{
+
+width:90%;
+
+max-width:1200px;
+
+margin:140px auto;
+
+display:flex;
+
+align-items:center;
+
+gap:70px;
+
+}
+
+.memory.reverse{
+
+flex-direction:row-reverse;
+
+}
+
+.image{
+
+flex:1;
+
+}
+
+.image img{
+
+width:100%;
+
+display:block;
+
+border-radius:28px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+transition:.5s;
+
+}
+
+.image img:hover{
+
+transform:scale(1.03);
+
+}
+
+.text{
+
+flex:1;
+
+}
+
+.text h2{
+
+font-family:'Playfair Display';
+
+font-size:50px;
+
+color:#d35c91;
+
+margin-bottom:25px;
+
+}
+
+.text p{
+
+font-size:18px;
+
+line-height:2;
+
+color:#666;
+
+}
+
+/* ===================================================
+   ENDING
+=================================================== */
+
+.ending{
+
+text-align:center;
+
+padding:170px 20px;
+
+}
+
+.ending h2{
+
+font-family:'Playfair Display';
+
+font-size:60px;
+
+color:#d35c91;
+
+margin-bottom:25px;
+
+}
+
+.ending p{
+
+font-size:22px;
+
+line-height:2;
+
+color:#666;
+
+}
+
+/* ===================================================
+   BUTTON
+=================================================== */
+
+.next{
+
+text-align:center;
+
+padding-bottom:160px;
+
+}
+
+.next a{
+
+display:inline-block;
+
+padding:18px 55px;
+
+background:#f48cb5;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:60px;
+
+font-size:18px;
+
+transition:.4s;
+
+box-shadow:0 20px 40px rgba(244,140,181,.35);
+
+}
+
+.next a:hover{
+
+transform:translateY(-6px);
+
+background:#ea6fa3;
+
+}
+
+/* ===================================================
+   FADE
+=================================================== */
+
+.fade{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s;
+
+}
+
+.fade.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===================================================
+   MOBILE
+=================================================== */
+
+@media(max-width:900px){
+
+.intro-content h1{
+
+font-size:56px;
+
+}
+
+.story-title h2{
+
+font-size:44px;
+
+}
+
+.memory{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:40px;
+
+}
+
+.memory.reverse{
+
+flex-direction:column;
+
+}
+
+.text h2{
+
+font-size:34px;
+
+}
+
+.text p{
+
+font-size:16px;
+
+}
+
+#slideImage{
+
+width:100%;
+
+}
+
+#slideCaption{
+
+font-size:28px;
+
+}
+
+.ending h2{
+
+font-size:42px;
+
+}
+
+.ending p{
+
+font-size:18px;
+
+}
+
+}
+/* ==========================================
+   LETTERS PAGE
+========================================== */
+
+.letters{
+    width:90%;
+    max-width:1000px;
+    margin:80px auto;
+}
+
+.letterCard{
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(12px);
+    border-radius:30px;
+    padding:50px;
+    margin-bottom:60px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.letterCard:hover{
+    transform:translateY(-8px);
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+}
+
+.letterCard h2{
+    font-family:'Dancing Script',cursive;
+    color:#d35c91;
+    font-size:52px;
+    margin-bottom:25px;
+}
+
+.letterCard p{
+    font-size:18px;
+    line-height:2;
+    color:#555;
+}
+
+/* ==========================================
+   FINAL PAGE
+========================================== */
+
+.finalHero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.finalHero h1{
+    font-family:'Playfair Display',serif;
+    font-size:70px;
+    color:#d35c91;
+}
+
+.finalHero p{
+    margin-top:20px;
+    color:#666;
+    font-size:20px;
+}
+
+#gift{
+    font-size:120px;
+    margin-top:50px;
+    cursor:pointer;
+    transition:.4s;
+    animation:floatGift 2s ease-in-out infinite;
+}
+
+#gift:hover{
+    transform:scale(1.15);
+}
+
+@keyframes floatGift{
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+#surprise{
+
+display:none;
+
+padding:120px 20px;
+
+text-align:center;
+
+}
+
+.finalPhoto{
+
+width:430px;
+
+max-width:90%;
+
+border-radius:30px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+margin-bottom:40px;
+
+}
+
+#surprise h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:58px;
+
+color:#d35c91;
+
+margin-bottom:25px;
+
+}
+
+#surprise p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:20px;
+
+line-height:2;
+
+color:#666;
+
+}
+
+#surprise a{
+
+display:inline-block;
+
+margin-top:50px;
+
+padding:18px 55px;
+
+background:#f48cb5;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+transition:.35s;
+
+}
+
+#surprise a:hover{
+
+background:#e86ca2;
+
+transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   CONFETTI
+========================================== */
+
+.confetti{
+
+position:fixed;
+
+top:-20px;
+
+width:12px;
+
+height:18px;
+
+border-radius:3px;
+
+animation:confettiFall 4s linear forwards;
+
+z-index:999;
+
+}
+
+@keyframes confettiFall{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+}
+
+100%{
+
+transform:translateY(120vh) rotate(720deg);
+
+}
+
+}
+
+/* ==========================================
+   SCROLL ANIMATION
+========================================== */
+
+.fade{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s ease;
+
+}
+
+.fade.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* ==========================================
+   GLASS EFFECT
+========================================== */
+
+.memory,
+.letterCard{
+
+background:rgba(255,255,255,.65);
+
+backdrop-filter:blur(14px);
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#fff4f8;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#f3a0c4;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#de79a9;
+
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection{
+
+background:#f7a4c8;
+
+color:white;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:900px){
+
+.finalHero h1{
+
+font-size:46px;
+
+}
+
+#gift{
+
+font-size:90px;
+
+}
+
+#surprise h1{
+
+font-size:38px;
+
+}
+
+.letterCard{
+
+padding:35px;
+
+}
+
+.letterCard h2{
+
+font-size:38px;
+
+}
+
+.letterCard p{
+
+font-size:16px;
+
+line-height:1.9;
+
+}
+
+}
