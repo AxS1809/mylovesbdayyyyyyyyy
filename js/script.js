@@ -62,98 +62,98 @@ if(slideImage){
 const slides=[
 
 {
-image:"assets/photos/photo1.jpg",
-text:"The Cutest Girl ❤️"
-},
-
-{
-image:"assets/photos/photo2.jpg",
-text:"The Prettiest Smile 🌸"
-},
-
-{
-image:"assets/photos/photo3.jpg",
-text:"My Favourite Person 🤍"
-},
-
-{
-image:"assets/photos/photo4.jpg",
-text:"The Sweetest Soul 💖"
-},
-
-{
-image:"assets/photos/photo5.jpg",
-text:"My Sunshine ☀️"
-},
-
-{
-image:"assets/photos/photo6.jpg",
-text:"Always Beautiful 🌸"
-},
-
-{
 image:"assets/photos/photo7.jpg",
-text:"My Safe Place ❤️"
+text:"The Cutestest Gurlll ❤️"
 },
 
 {
 image:"assets/photos/photo8.jpg",
-text:"Forever Amazing ✨"
+text:"The Prettiesttt Smileee 🌸"
+},
+
+{
+image:"assets/photos/photo1.jpg",
+text:"My mostestt Favouriteee Personnn 🤍"
 },
 
 {
 image:"assets/photos/photo9.jpg",
-text:"A Smile I'll Never Forget 💕"
+text:"The Sweetestestst Soulll 💖"
 },
 
 {
 image:"assets/photos/photo10.jpg",
-text:"Pure Happiness ❤️"
+text:"Myy Sunshineee ☀️"
 },
 
 {
 image:"assets/photos/photo11.jpg",
-text:"The Brightest Smile 🌸"
+text:"Alwaysss Beautifulll 🌸"
 },
 
 {
-image:"assets/photos/photo12.jpg",
-text:"Beautiful Inside & Out 🤍"
-},
-
-{
-image:"assets/photos/photo13.jpg",
-text:"One In A Million 💖"
-},
-
-{
-image:"assets/photos/photo14.jpg",
-text:"Making Every Moment Better ❤️"
+image:"assets/photos/photo2.jpg",
+text:"My Safe Placee ❤️"
 },
 
 {
 image:"assets/photos/photo15.jpg",
-text:"A Memory I'll Always Keep 🌷"
+text:"Foreverr Amazingg ✨"
 },
 
 {
-image:"assets/photos/photo16.jpg",
-text:"You Make Life Better ☀️"
+image:"assets/photos/photo1.jpg",
+text:"A Smile I'll Neverr Forgett heheh 💕"
 },
 
 {
-image:"assets/photos/photo17.jpg",
-text:"Simply Perfect ❤️"
+image:"assets/photos/photo14.jpg",
+text:"Myy Happinessss ❤️"
 },
 
 {
 image:"assets/photos/photo18.jpg",
-text:"Thank You For Being You 💕"
+text:"The Brightestt Smileee 🌸"
+},
+
+{
+image:"assets/photos/photo13.jpg",
+text:"Beautifull Insidee & Outtt 🤍"
+},
+
+{
+image:"assets/photos/photo16.jpg",
+text:"Onee In A Millionnn 💖"
 },
 
 {
 image:"assets/photos/photo19.jpg",
-text:"Happy 15th Birthday Shayaali 🎂❤️"
+text:"Makinggg myy Everyy Momentt betterr ❤️"
+},
+
+{
+image:"assets/photos/photo12.jpg",
+text:"myy favvvvv phototo"
+},
+
+{
+image:"assets/photos/photo17.jpg",
+text:"You Make Life Better ☀️"
+},
+
+{
+image:"assets/photos/photo3.jpg",
+text:"jusss sooo Perfecttt ❤️"
+},
+
+{
+image:"assets/photos/photo6.jpg",
+text:"Thankkk Youuu Forr Beinggg Youuu 💕"
+},
+
+{
+image:"assets/photos/photo5.jpg",
+text:"Happyyy 15th Birthdayyy Shayaaliii 🎂❤️"
 }
 
 ];
